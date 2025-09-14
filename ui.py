@@ -4,9 +4,8 @@ import streamlit as st
 st.sidebar.title("Navigation")
 page = st.sidebar.radio("Go to", ["Home", "Career Assessment", "CEI Score", "Resume Builder"])
 
-# ----------------------------
 # Home Page
-# ----------------------------
+
 if page == "Home":
     st.title("🎯 Personalized Career & Skills Advisor")
     st.write("""
@@ -24,9 +23,8 @@ if page == "Home":
 
     st.success("👉 Navigate using the sidebar to test our prototype features.")
 
-# ----------------------------
 # Page 1: Career Assessment
-# ----------------------------
+
 elif page == "Career Assessment":
     st.title("Career Assessment")
     st.write("Get personalized career suggestions based on your skills and interests.")
@@ -39,9 +37,8 @@ elif page == "Career Assessment":
                    f"we suggest roles in **Data Analysis** and **AI Engineering**.")
         st.write("👉 Suggested Next Step: Learn Python, SQL, and Machine Learning basics.")
 
-# ----------------------------
 # Page 2: CEI Score
-# ----------------------------
+
 elif page == "CEI Score":
     st.title("Continuous Employability Index (CEI)")
     st.write("Track how employable you are with a dynamic score.")
@@ -55,9 +52,8 @@ elif page == "CEI Score":
     st.write("- Work on a real-world project")
     st.write("- Improve communication & problem-solving skills")
 
-# ----------------------------
 # Page 3: Resume Builder
-# ----------------------------
+
 elif page == "Resume Builder":
     st.title("AI Resume Builder & Optimizer")
     st.write("Upload your resume to check ATS readiness and improvement suggestions.")
